@@ -6,6 +6,7 @@ void displayStats(Player player)
 	cout << "Strength: " << player.getAttack() << endl;
 	cout << "Defense: " << player.getDefense() << endl;
 	cout << "Speed: " << player.getSpeed() << endl;
+	cout << "Gold: " << player.getScore() << endl;
 }
 
 void displayEnemy(Enemy enemy)
@@ -31,7 +32,15 @@ void outOfCombatMenu(Player player)
 
 	switch (choice)
 	{
-
+	case 1: 
+		break;
+	case 2: rest();
+		break;
+	case 3: shopMenu();
+		break;
+	case 4: quit();
+		break;
+	default case: cout << "Invalid input. Try again."; outOfCombatMenu(Player player);
 	}
 
 }
